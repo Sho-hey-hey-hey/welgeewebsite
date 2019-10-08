@@ -1,11 +1,10 @@
-title: Post Two
-template: SinglePost
-status: Published
+---
+title: '世界難民の日とは？世界難民の日が生まれた経緯と、今年国内で開催される、キャンペーンやイベントをまとめました。'
 date: '2018-03-28'
-featuredImage: /images/uploads/news-2.png
+featuredImage: /img/uploads/news-2.png
 excerpt: This is an excerpt of Post Two
 categories:
-  - category: Updates
+  - category: News
 ---
 This is placeholder text that our web designers put here to make sure words appear properly on your website. This text is going to be replaced once the website is completed. You are currently reading text that is written in English, not any other language. Be careful not to waste too much time reading placeholder text! This text isn’t going to remain here because it doesn't pertain to the website.
 

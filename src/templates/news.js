@@ -1,8 +1,7 @@
 import React from 'react'
 import SectionTitle from "../components/helper/section-title";
-
+import { useStaticQuery, Link, graphql } from "gatsby"
 const NewsPage = ({data}) => {
-  const {frontmatter} = data
   console.log('********', data)
   return (
     <div id="news">
@@ -75,12 +74,6 @@ const NewsPage = ({data}) => {
   )
 }
 
-export const newsQuery = graphql`
-    query BlogPostByPath($path: String!) {
-        markdownRemark {
-            html
-        }
-    }
-`
+
 
 export default NewsPage

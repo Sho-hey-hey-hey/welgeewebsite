@@ -9,7 +9,7 @@ const navbarData = [
     subMenu: [
       {
         title: '私たちの想い',
-        url: ''
+        url: '/about'
       },
       {
         title: '応援の声',

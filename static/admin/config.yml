@@ -4,13 +4,13 @@ backend:
 media_folder: static/img/uploads
 public_folder: img/uploads
 collections:
-  - name: "pages"
-      label: "Page"
+  - name: "news"
+      label: "News"
       delete: false # Prevent users from deleting documents in this collection
       editor:
         preview: true
       files:
-        - file: "content/pages/news.md"
+        - file: "content/news/news01.md"
             label: "News Page"
             name: "news-page"
             fields:

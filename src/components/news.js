@@ -1,17 +1,19 @@
 import React from 'react'
+import { Link } from "gatsby"
 
 const NewsComponent = props => {
-  const { news } = props;
-  console.log("+++++", news)
+  const { node } = props;
+  const { frontmatter, fields } = node
   return (
     <div id="news">
       <div className="item">
         <div className="category">ニュース</div>
-        <a href="/news/news-11.html">
+        <Link to={`/news/${fields.slug}`}>
           <img
-            src={news.featuredImage} /></a>
-        <div className="date">{news.date}</div>
-        <div className="title">{news.title}</div>
+            src={frontmatter.featuredImage} />
+        </Link>
+        <div className="date">{frontmatter.date}</div>
+        <div className="title">{frontmatter.title}</div>
       </div>
       <style jsx={true}>{`
         .items {

@@ -15,18 +15,19 @@ const NewsPage  = () => {
                           date
                           featuredImage
                       }
+                      fields {
+                          slug
+                      }
                   }
               }
           }
       }
   `)
-  console.log('datatata', newsPage)
   const allNews = newsPage.allMarkdownRemark.edges
-  console.log("Hellow", allNews)
   return (
     <Layout>
       <div>
-        {allNews.map((news, i) => <NewsComponent key={i} news={news.node.frontmatter} />
+        {allNews.map((news, i) => <NewsComponent key={i} node={news.node} />
         )}
       </div>
     </Layout>

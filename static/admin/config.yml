@@ -1,0 +1,23 @@
+backend:
+  name: welgeewebsite
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: static/img/uploads
+public_folder: img/uploads
+collections:
+  - name: "news"
+      label: "News"
+      delete: false # Prevent users from deleting documents in this collection
+      editor:
+        preview: true
+      files:
+        - file: "content/news/news01.md"
+            label: "News Page"
+            name: "news-page"
+            fields:
+              - {label: Template, name: template, widget: hidden, default: BlogIndex}
+              - {label: Title, name: title, widget: string}
+              - {label: Featured Image, name: featuredImage, widget: image}
+              - {label: Date, name: date, widget: date}
+
+
+

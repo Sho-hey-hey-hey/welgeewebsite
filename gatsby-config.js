@@ -9,6 +9,12 @@ module.exports = {
     `gatsby-plugin-styled-jsx`,
     `gatsby-plugin-catch-links`,
     {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: false,
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

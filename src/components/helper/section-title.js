@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types'
 const SectionTitle = props => {
   const {jpTitle, enTitle} = props
   return (
@@ -22,4 +22,8 @@ const SectionTitle = props => {
   )
 }
 
+SectionTitle.propTypes = {
+  jpTitle: PropTypes.string.isRequired,
+  enTitle: PropTypes.string.isRequired,
+}
 export default SectionTitle;

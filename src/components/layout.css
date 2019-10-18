@@ -1,13 +1,13 @@
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/*html {*/
+/*  font-family: sans-serif;*/
+/*  -ms-text-size-adjust: 100%;*/
+/*  -webkit-text-size-adjust: 100%;*/
+/*}*/
+/*body {*/
+/*  margin: 0;*/
+/*  -webkit-font-smoothing: antialiased;*/
+/*  -moz-osx-font-smoothing: grayscale;*/
+/*}*/
 article,
 aside,
 details,
@@ -198,16 +198,36 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+@font-face {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: bold;
+  src: url('../static/font/LeagueSpartan-Bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKjp";
+  font-style: normal;
+  font-weight: bold;
+  src: url('../static/font/NotoSansCJKjp-Bold.woff') format("woff");
+}
+
+@font-face {
+  font-family: "NotoSansCJKjp";
+  font-style: normal;
   font-weight: normal;
+  src: url('../static/font/NotoSansCJKjp-Regular.woff') format("woff");
+}
+
+body {
+  font-family: 'NotoSansCJKjp', sans-serif;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  margin: 0;
 }
 img {
   max-width: 100%;

@@ -71,7 +71,9 @@ const Header = ({ siteTitle }) => (
   <header className="container">
       <div>
         <div className="logo-box">
-          <img className="logoImg" src={welgeeLogo} />
+          <Link to="/home">
+            <img className="logoImg" src={welgeeLogo} />
+          </Link>
         </div>
         <div className="menuBox">
           <ul className="menu">

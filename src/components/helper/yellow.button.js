@@ -8,7 +8,7 @@ const YellowButton = props => {
       <Link to={link} style={{textDecoration: 'none', color: 'white', width: 240}} ><span>{title}</span></Link>
       <style jsx>{`
         span {
-          background-color: #FFDE59;
+          background-color: #FFBF00;
           padding: 0.6rem 6rem;
           cursor: pointer;
           text-align: center;

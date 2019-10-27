@@ -36,7 +36,9 @@ const MessagesSection = () => {
             </p>
         </div>
       </div>
-      <YellowButton title="more" link="/about/about"/>
+      <div className="yellow-button">
+        <YellowButton title="more" link="/about/about"/>
+      </div>
       <style jsx>{`
         #messages {
           margin-top: 100px;
@@ -84,6 +86,12 @@ const MessagesSection = () => {
           margin: 0 auto;
           margin-top: 40px;
           width: 190px;
+        }
+        .yellow-button {
+          width: 80%;
+          margin: 1rem auto;
+          text-align: center;
+          margin-top: 3rem;
         }
       `}</style>
     </section>

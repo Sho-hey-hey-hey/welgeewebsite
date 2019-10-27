@@ -8,9 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Helmet } from "react-helmet"
 import Header from "./header"
 import "./layout.css"
+import PageFooter from "./helper/footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,8 +26,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+              crossOrigin="anonymous" />
+      </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
+      <PageFooter />
     </>
   )
 }

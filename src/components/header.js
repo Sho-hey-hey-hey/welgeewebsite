@@ -101,9 +101,9 @@ const Header = ({ siteTitle }) => (
             ))}
           </ul>
           <div className="socialMedia">
-            <i className="fa fa-facebook-f" />
-            <i className="fa fa-twitter" />
-            <i className="fa fa-instagram" />
+            <i className="fab fa-facebook-f" />
+            <i className="fab fa-twitter" />
+            <i className="fab fa-instagram" />
           </div>
         </div>
       </div>

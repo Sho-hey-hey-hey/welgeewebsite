@@ -1,15 +1,13 @@
 import React from 'react';
 import YellowButton from "../helper/yellow.button";
 import PropTypes from "prop-types"
+import AboutSectionTitle from "./about-section-title"
 const TextImageBackground = props => {
   const { enTitle, jpTitle, description, buttonLink, backgroundImage} = props
   return (
     <section id="passion">
       <div className="filter">
-        <div className="section-title">
-          <h1>{enTitle}</h1>
-          <h4>{jpTitle}</h4>
-        </div>
+        <AboutSectionTitle enTitle={enTitle} jpTitle={jpTitle}/>
         <p>
           {description}
         </p>

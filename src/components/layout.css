@@ -229,6 +229,14 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
   margin: 0;
 }
+.section-container {
+  width: 80%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 img {
   max-width: 100%;
   margin-left: 0;

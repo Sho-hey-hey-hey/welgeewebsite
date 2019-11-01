@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
+import PropTypes from "prop-types"
 
 const NewsComponent = props => {
   const { node } = props;
@@ -61,6 +62,10 @@ const NewsComponent = props => {
       `}</style>
     </div>
   )
+}
+
+NewsComponent.propTypes = {
+  node: PropTypes.shape().isRequired,
 }
 
 export default NewsComponent

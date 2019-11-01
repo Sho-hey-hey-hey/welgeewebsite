@@ -1,10 +1,11 @@
 import React from 'react';
 import SectionTitle from "../helper/section-title"
+import AboutSectionTitle from "../helper/about-section-title"
 
 const WelgeeInformation = () => {
   return (
     <section id="info">
-      <SectionTitle jpTitle="団体概要" enTitle="About WELgee"/>
+      <AboutSectionTitle enTitle="About WELgee" jpTitle="団体概要"/>
       <table>
         <tbody>
         <tr>

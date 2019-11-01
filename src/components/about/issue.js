@@ -5,11 +5,12 @@ import SectionTitle from "../helper/section-title"
 
 import backgroundImage from '../../images/about/issue-bg.jpg'
 import YellowButton from "../helper/yellow.button"
+import AboutSectionTitle from "../helper/about-section-title"
 
 const IssueSection = () => {
   return (
     <div id="issue">
-      <SectionTitle jpTitle="取り組む課題" enTitle="Issue" />
+      <AboutSectionTitle enTitle="Issue" jpTitle="取り組む課題"/>
       <div className="img">
         <div className="filter">
           <h1>
@@ -67,8 +68,4 @@ const IssueSection = () => {
   )
 }
 
-IssueSection.propTypes = {
-  jpTitle: PropTypes.string.isRequired,
-  enTitle: PropTypes.string.isRequired,
-}
 export default IssueSection;

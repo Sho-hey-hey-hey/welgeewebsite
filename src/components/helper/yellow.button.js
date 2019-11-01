@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "gatsby"
+import PropTypes from "prop-types"
 
 const YellowButton = props => {
   const {title, link} = props
@@ -26,6 +27,11 @@ const YellowButton = props => {
       `}</style>
     </div>
   )
+}
+
+YellowButton.propTypes = {
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 }
 
 export default YellowButton;

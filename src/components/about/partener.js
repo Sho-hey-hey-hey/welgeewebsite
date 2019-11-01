@@ -9,7 +9,7 @@ import cheerioLogo from '../../images/about/partner-cheerio.jpg'
 import hisLogo from '../../images/about/partner-his.png'
 import digisearchLogo from '../../images/about/partner-digisearch.png'
 import crossfieldsLogo from '../../images/about/partner-crossfields.jpg'
-import AboutSectionTitle from "../helper/about-section-title"
+import AboutSectionTitle from "../common/about-section-title"
 
 
 

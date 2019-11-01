@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from "../helper/section-title"
+import SectionTitle from "../common/section-title"
 import homeTopImage from "../../images/top-img.jpg"
 
 const AboutWelgee = () => {

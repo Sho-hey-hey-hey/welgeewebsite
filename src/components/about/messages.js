@@ -1,10 +1,10 @@
 import React from 'react';
-import AboutSectionTitle from "../helper/about-section-title"
+import AboutSectionTitle from "../common/about-section-title"
+import YellowButton from "../common/yellow.button"
 
 import supporter01Image from '../../images/about/supporter-1.jpg'
 import supporter02Image from '../../images/about/supporter-2.jpg'
 import supporter03Image from '../../images/about/supporter-3.jpg'
-import YellowButton from "../helper/yellow.button"
 
 const MessagesSection = () => {
   return (

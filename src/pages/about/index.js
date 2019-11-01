@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutWelgee from "../../components/about/about-welgee"
 import Layout from "../../components/layout"
-import TextImageBackground from "../../components/helper/text-img-background"
+import TextImageBackground from "../../components/common/text-img-background"
 import IssueSection from "../../components/about/issue"
 
 

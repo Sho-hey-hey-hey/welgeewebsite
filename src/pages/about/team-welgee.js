@@ -1,8 +1,8 @@
 import React from 'react'
-import WhiteBackgroundText from "../../components/helper/white-background-text"
+import WhiteBackgroundText from "../../components/common/white-background-text"
 import Layout from "../../components/layout"
 import TeamMember from "../../components/about/team-welgee/team-member"
-import JoinUsSection from "../../components/about/common/joini-us"
+import JoinUsSection from "../../components/common/joini-us"
 
 
 const teamDescription = 'WELgeeのメンバーは、職員や顧問だけではなく、難民の若者たちや、共感する企業の方々、アドバイザー、寄付者の方々...\n' +
@@ -81,6 +81,7 @@ const TeamWelgeePage = () => (
     <div className="welgee-member">
     {welgeeTeamData.map((member, i) => (
       <TeamMember
+        key={i}
         name={member.name}
         image={member.image}
         description={member.description}
@@ -89,9 +90,10 @@ const TeamWelgeePage = () => (
     ))}
     </div>
     <h3>監事</h3>
-    <div className="welgee-member">
+    <div id="auditor" className="welgee-member">
       {auditorMember.map((member, i) => (
         <TeamMember
+          key={i}
           name={member.name}
           image={member.image}
           description={member.description}
@@ -103,6 +105,7 @@ const TeamWelgeePage = () => (
     <div className="welgee-member">
       {advisorMember.map((member, i) => (
         <TeamMember
+          key={i}
           name={member.name}
           image={member.image}
           description={member.description}

@@ -1,5 +1,5 @@
 import React from 'react';
-import YellowButton from "../helper/yellow.button";
+import YellowButton from "../common/yellow.button";
 import PropTypes from "prop-types"
 import AboutSectionTitle from "./about-section-title"
 const TextImageBackground = props => {

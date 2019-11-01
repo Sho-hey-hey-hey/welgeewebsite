@@ -1,6 +1,6 @@
 import React from 'react';
-import YellowButton from "../helper/yellow.button"
-import AboutSectionTitle from "../helper/about-section-title"
+import YellowButton from "../common/yellow.button"
+import AboutSectionTitle from "../common/about-section-title"
 
 import programs01 from '../../images/about/program-1.png'
 import programs02 from '../../images/about/program-2.png'

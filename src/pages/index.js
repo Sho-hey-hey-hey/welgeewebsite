@@ -5,7 +5,7 @@ import HomeNews from "../components/home/news";
 import Welgee from '../components/home/welgee';
 import HomePassion from "../components/home/passion";
 import Layout from "../components/layout"
-import JoinUsSection from "../components/about/common/joini-us"
+import JoinUsSection from "../components/common/joini-us"
 const Home = () => (
   <Layout>
     <div className="container">

@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionTitle from "../helper/section-title";
+import SectionTitle from "../common/section-title";
 const HomeNews = () => (
   <div id="news">
     <SectionTitle jpTitle="お知らせ" enTitle="News"/>

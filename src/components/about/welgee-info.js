@@ -1,6 +1,5 @@
 import React from 'react';
-import SectionTitle from "../helper/section-title"
-import AboutSectionTitle from "../helper/about-section-title"
+import AboutSectionTitle from "../common/about-section-title"
 
 const WelgeeInformation = () => {
   return (

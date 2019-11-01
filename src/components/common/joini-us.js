@@ -1,9 +1,9 @@
 import React from 'react'
-import YellowButton from "../../helper/yellow.button"
+import YellowButton from "./yellow.button"
 
-import donationItemImage from '../../../images/join-donation.jpg'
-import internItemImage from '../../../images/join-intern.jpg'
-import SectionTitle from "../../helper/section-title"
+import donationItemImage from '../../images/join-donation.jpg'
+import internItemImage from '../../images/join-intern.jpg'
+import SectionTitle from "./section-title"
 
 const JoinUsSection = () => {
   return (

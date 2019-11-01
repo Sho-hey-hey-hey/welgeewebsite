@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import Header from "./header"
 import "./layout.css"
-import PageFooter from "./helper/footer"
+import PageFooter from "./common/footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

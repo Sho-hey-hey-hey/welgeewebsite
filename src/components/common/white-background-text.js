@@ -1,21 +1,20 @@
 import React from 'react'
 import AboutSectionTitle from "./about-section-title"
 import PropTypes from "prop-types"
-import Layout from "../layout"
 
 const WhiteBackgroundText = props => {
-  const { enTitle, jpTitle, description} = props
+  const { enTitle, jpTitle, description, sectionId} = props
   return (
-  <section id="top-msg" className="section-container">
+  <section id={sectionId} className="section-container">
     <AboutSectionTitle enTitle={enTitle} jpTitle={jpTitle} />
     <p>
       {description}
     </p>
     <style jsx>{`
-      #top-msg {
+      .section-container {
         margin-top: 100px;
       }
-      #top-msg > p {
+      .section-container p {
         margin-top: 50px;
         color: #333333;
         text-align: center;
@@ -26,11 +25,15 @@ const WhiteBackgroundText = props => {
   </section>
 )}
 
+WhiteBackgroundText.defaultProps = {
+  sectionId: ''
+}
+
 WhiteBackgroundText.propTypes = {
   enTitle: PropTypes.string.isRequired,
   jpTitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  
+  sectionId: PropTypes.string
 }
 
 export default WhiteBackgroundText

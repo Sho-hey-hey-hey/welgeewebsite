@@ -1,11 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types'
-import { Link } from "gatsby"
-import SectionTitle from "../helper/section-title"
-
 import backgroundImage from '../../images/about/issue-bg.jpg'
-import YellowButton from "../helper/yellow.button"
-import AboutSectionTitle from "../helper/about-section-title"
+import YellowButton from "../common/yellow.button"
+import AboutSectionTitle from "../common/about-section-title"
 
 const IssueSection = () => {
   return (

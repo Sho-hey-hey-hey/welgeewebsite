@@ -1,6 +1,6 @@
 import React from 'react';
-import YellowButton from "../helper/yellow.button";
-import SectionTitle from "../helper/section-title";
+import YellowButton from "../common/yellow.button";
+import SectionTitle from "../common/section-title";
 
 
 const Welgee = () => {

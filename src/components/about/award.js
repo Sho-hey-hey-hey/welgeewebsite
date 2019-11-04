@@ -1,7 +1,7 @@
 import React from 'react';
 
 import backgroundImage from '../../images/about/awards-bg.png'
-import AboutSectionTitle from "../helper/about-section-title"
+import AboutSectionTitle from "../common/about-section-title"
 const AwardsSection = () => {
   return (
     <section id="awards">

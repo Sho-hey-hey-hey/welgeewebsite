@@ -1,7 +1,7 @@
 import React from 'react';
-import YellowButton from "../helper/yellow.button";
+import YellowButton from "../common/yellow.button";
 import backgroundImg from '../../images/passion-bg.jpg'
-import SectionTitle from "../helper/section-title";
+import SectionTitle from "../common/section-title";
 const HomePassion = props => {
   return (
     <section id="passion">
@@ -14,7 +14,7 @@ const HomePassion = props => {
           「自分は役に立たない人間だ」と可能性を閉ざしている人たちがいるのが現状です。<br/>
           しかし、実は彼らは将来的な故郷の担い手たちなのです。<br/>
         </p>
-        <YellowButton title="more" link="/about" />
+        <YellowButton title="more" link="/about/passion#passion" />
       </div>
       <style jsx>{`
         #passion {

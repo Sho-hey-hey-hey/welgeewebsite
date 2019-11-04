@@ -237,6 +237,12 @@ body {
   padding-right: 10px;
 }
 
+.global-text {
+  text-align: center;
+  white-space: pre-wrap;
+  line-height: 2rem;
+}
+
 img {
   max-width: 100%;
   margin-left: 0;

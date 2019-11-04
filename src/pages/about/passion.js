@@ -3,6 +3,7 @@ import WhiteBackgroundText from "../../components/common/white-background-text"
 import Layout from "../../components/layout"
 
 import passionImage from '../../images/about/passion/passion.jpg'
+import IssueSection from "../../components/about/passion/issue"
 const PassionPage = () => {
   return (
     <Layout>
@@ -13,8 +14,9 @@ const PassionPage = () => {
           description={"私たちは、自らの境遇によって未来を奪われた難民たちが、 \n 自らの境遇を乗り超えて、未来を描けるような社会を作ります。"}
           sectionId="passion"
         />
-        <div className="image"></div>
+        <div className="image"/>
       </div>
+      <IssueSection />
       <style jsx>{`
         .image {
           margin-top: 42px;

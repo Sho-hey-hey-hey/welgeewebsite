@@ -30,7 +30,7 @@ const CoreProgramsSection = () => {
         </div>
       </div>
       <div className="description">
-        <YellowButton title="more" link="/programs"/>
+        <YellowButton title="more" link="/about/supporters"/>
       </div>
       <style jsx>{`
         #programs {

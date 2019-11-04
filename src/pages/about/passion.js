@@ -4,6 +4,9 @@ import Layout from "../../components/layout"
 
 import passionImage from '../../images/about/passion/passion.jpg'
 import IssueSection from "../../components/about/passion/issue"
+import WhySection from "../../components/about/passion/why"
+import ProblemsSection from "../../components/about/passion/problems"
+import ActualSection from "../../components/about/passion/actual"
 const PassionPage = () => {
   return (
     <Layout>
@@ -17,6 +20,9 @@ const PassionPage = () => {
         <div className="image"/>
       </div>
       <IssueSection />
+      <WhySection/>
+      <ProblemsSection />
+      <ActualSection />
       <style jsx>{`
         .image {
           margin-top: 42px;

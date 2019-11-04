@@ -37,7 +37,7 @@ const MessagesSection = () => {
         </div>
       </div>
       <div className="yellow-button">
-        <YellowButton title="more" link="/about/about"/>
+        <YellowButton title="more" link="/about/supporters"/>
       </div>
       <style jsx>{`
         #messages {

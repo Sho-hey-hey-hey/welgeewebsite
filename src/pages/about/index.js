@@ -32,7 +32,7 @@ const AboutPage = () => (
       jpTitle="私たちの役割"
       enTitle="Mission"
       description={missionDescription}
-      buttonLink="/team-welgee"
+      buttonLink="/about/passion#mission"
       backgroundImage={missionBackground}
     />
     <WelgeeInformation />

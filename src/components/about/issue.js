@@ -20,7 +20,7 @@ const IssueSection = () => {
         <p>
           WELgeeの取り組む課題は、難民として日本に逃れてきた人が自らの未来をデザインできる環境にないこと。社会との隔絶や、不安定な法的地位、そして唯一の希望である難民認定申請も、高い確率で不認定となってしまう現状があります。
         </p>
-        <YellowButton link="/about/passion" title="more"/>
+        <YellowButton link="/about/passion#issue" title="more"/>
       </div>
       <style jsx>{`
         #issue {

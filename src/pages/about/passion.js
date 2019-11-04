@@ -7,6 +7,8 @@ import IssueSection from "../../components/about/passion/issue"
 import WhySection from "../../components/about/passion/why"
 import ProblemsSection from "../../components/about/passion/problems"
 import ActualSection from "../../components/about/passion/actual"
+import MissionSection from "../../components/about/passion/mission"
+import CollaborateSection from "../../components/about/passion/collaborate"
 const PassionPage = () => {
   return (
     <Layout>
@@ -23,6 +25,8 @@ const PassionPage = () => {
       <WhySection/>
       <ProblemsSection />
       <ActualSection />
+      <MissionSection />
+      <CollaborateSection />
       <style jsx>{`
         .image {
           margin-top: 42px;

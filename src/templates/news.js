@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import PropTypes from 'prop-types';
 export const query = graphql`
@@ -19,34 +19,34 @@ const NewsPage = ({data}) => {
   const { frontmatter, html } = data.markdownRemark
   return (
     <Layout>
+      <div className="arrow-back">
+        <Link to="/news" style={{textDecoration: 'none', color: '#6A6A6A', width: 240}} >
+          <span>{'>'}</span>
+          <span>News</span>
+        </Link>
+      </div>
       <div id="news">
         <div className="date-label">
           <div className="category">ニュース</div>
           <div className="date">{frontmatter.date}</div>
         </div>
         <p className="news-title">{frontmatter.title}</p>
-        <img src={frontmatter.featuredImage} />
+        <img  className="news-image" src={frontmatter.featuredImage} />
       </div>
-      <div dangerouslySetInnerHTML={{__html: html}}>
+      <div className="news-content" dangerouslySetInnerHTML={{__html: html}}>
       </div>
       <style jsx={true}>{`
         #news {
-          margin-top: 100px;
+          margin: 3rem 10% 0 10%;
         }
-        #news > .items {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          width: 80%;
-          max-width: 950px;
-          margin: 0 auto;
+        .arrow-back {
+          margin: 2rem 10% 0 10%;
         }
-        #news > .items > .item {
-          width: 250px;
-          margin: 0 auto;
-          margin-top: 30px;
+        .arrow-back span {
+          font-size: 14px;
+          margin-right: 0.5rem;
         }
-        #news > .items > .item > .category {
+        #news .category {
           width: 70px;
           height: 25px;
           background-color: #5CBBFF;
@@ -56,24 +56,21 @@ const NewsPage = ({data}) => {
           font-size: 13px;
           line-height: 25px;
         }
-        #news > .items > .item > a > img {
+        #news img {
           margin-top: 12px;
-          width: 250px;
-          height: 150px;
+          width: 100%;
+          // height: 150px;
         }
-        #news > .items > .item > .date {
-          margin-top: 5px;
-          font-size: 14px;
+        #news .date {
+          margin: 0.6rem 0;
+          font-size: 16px;
         }
-        #news > .items > .item > .title {
-          margin-top: 8px;
-          font-size: 14px;
-          line-height: 1.5;
+        .news-title {
+          font-size: 2rem;
+          line-height:  3rem;
         }
-        #news > a.button {
-          background-color: #FFDE59;
-          color: white;
-          margin-top: 50px;
+        .news-content {
+          margin: 0 10%;
         }
       `}</style>
     </Layout>

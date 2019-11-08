@@ -26,10 +26,17 @@ const NewsPage  = () => {
   const allNews = newsPage.allMarkdownRemark.edges
   return (
     <Layout>
-      <div>
+      <div className="news-page">
         {allNews.map((news, i) => <NewsComponent key={i} node={news.node} />
         )}
       </div>
+      <style jsx>{`
+        .news-page {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 10%;
+        }
+      `}</style>
     </Layout>
   )
 }

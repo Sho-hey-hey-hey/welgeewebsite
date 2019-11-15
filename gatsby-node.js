@@ -1,4 +1,5 @@
 const path = require('path')
+const _ = require('lodash')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 module.exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -6,6 +7,7 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === `MarkdownRemark`) {
   
     const slug = path.basename(node.fileAbsolutePath, '.md')
+
     const fileNode = getNode(node.parent)
     const parsedFilePath = path.parse(fileNode.relativePath)
     

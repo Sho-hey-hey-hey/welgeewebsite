@@ -10,13 +10,15 @@ const NewsComponent = props => {
       <div className="item">
         <div className="category">ニュース</div>
         <Link to={`/news/${fields.slug}`}>
-          <img
-            src={frontmatter.featuredImage} />
+          <img src={frontmatter.featuredImage} />
         </Link>
         <div className="date">{frontmatter.date}</div>
         <div className="title">{frontmatter.title}</div>
       </div>
       <style jsx={true}>{`
+        #news {
+          margin: 0 2rem;
+        }
         .items {
           display: flex;
           justify-content: space-between;

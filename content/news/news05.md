@@ -1,10 +1,11 @@
 ---
-title: 'put news title in here'
-date: 'put date in here like 2018-03-28'
-featuredImage: 'put image link in here'
+title: 'Breaking news'
+date: '2019-11-21'
+featuredImage: 'http://welgee.sakura.ne.jp/image/slide.png'
 excerpt: ''
-tags: ["Report", "Media"]
+tags: ["Report"]
 
 ---
 
-put the news content in here ..... 
+#Breking news
+>This is created by Shohei

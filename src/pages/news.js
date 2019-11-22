@@ -8,7 +8,8 @@ const NewsPage  = () => {
   const [category, toggleCategory] = useState('All')
   const newsPage = useStaticQuery(graphql`
       query {
-          allMarkdownRemark {
+          allMarkdownRemark
+          (sort: { fields: [frontmatter___date], order: DESC }) {
               edges {
                   node {
                       id

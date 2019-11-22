@@ -8,6 +8,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-jsx`,
     `gatsby-plugin-catch-links`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
@@ -17,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `cms-img`,
         path: `${__dirname}/static/img`,
       },
     },
@@ -28,7 +30,6 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -41,7 +42,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -58,9 +58,9 @@ module.exports = {
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-images',
-            // options: {
-            //   maxWidth:
-            // }
+            options: {
+              maxWidth: '800px'
+            }
           }
         ],
       },

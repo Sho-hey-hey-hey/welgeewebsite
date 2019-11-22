@@ -5,10 +5,11 @@ import PropTypes from "prop-types"
 const NewsComponent = props => {
   const { node } = props;
   const { frontmatter, fields } = node
+  const tag = frontmatter.tags[0]
   return (
     <div id="news">
       <div className="item">
-        <div className="category">ニュース</div>
+        <div className={`category ${tag}`}>{tag}</div>
         <Link to={`/news/${fields.slug}`}>
           <img src={frontmatter.featuredImage} />
         </Link>
@@ -35,7 +36,6 @@ const NewsComponent = props => {
         .category {
           width: 70px;
           height: 25px;
-          background-color: #5CBBFF;
           color: white;
           border-radius: 4px;
           text-align: center;
@@ -46,6 +46,7 @@ const NewsComponent = props => {
           margin-top: 12px;
           width: 250px;
           height: 150px;
+          margin-bottom: 0;
         }
         .date {
           margin-top: 5px;
@@ -60,6 +61,15 @@ const NewsComponent = props => {
           background-color: #FFDE59;
           color: white;
           margin-top: 50px;
+        }
+        div.Event {
+          background: #FF7875;
+        }
+        div.Media {
+          background: #2EB358;
+        }
+        div.News {
+          background: #5CBBFF;
         }
       `}</style>
     </div>

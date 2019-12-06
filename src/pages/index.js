@@ -1,7 +1,6 @@
 import React from 'react'
 import homeTopImage from "../images/top-img.jpg";
 import HomeBanner from "../components/home/home-banner";
-import HomeNews from "../components/home/news";
 import Welgee from '../components/home/welgee';
 import HomePassion from "../components/home/passion";
 import Layout from "../components/layout"
@@ -9,6 +8,7 @@ import JoinUsSection from "../components/common/joini-us"
 import { graphql, useStaticQuery } from "gatsby"
 import NewsComponent from "../components/news"
 import SectionTitle from "../components/common/section-title"
+import ProgramSection from "../components/home/program"
 const Home = () => {
   const newsPage = useStaticQuery(graphql`
       query {
@@ -50,6 +50,7 @@ const Home = () => {
         <Welgee />
       </div>
       <HomePassion />
+      <ProgramSection />
       <JoinUsSection />
       <style jsx>{`
         container {

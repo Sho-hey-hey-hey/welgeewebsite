@@ -38,7 +38,7 @@ const ProgramSection = () => {
               </p>
           </div>
           <div className="item min">
-            <Link to="https://www.welgee.jp/programs/welgee-salon.html ">
+            <Link to={`/programs/welgee-salon`} style={{color: '#333333'}}>
               <img src={programSalonImage} />
               <h4 className="global-text">WELgeeサロン</h4>
               <p className="global-text">

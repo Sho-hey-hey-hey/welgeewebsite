@@ -1,8 +1,7 @@
 import React from 'react'
-import bannerImg from '../../images/campaign.png'
-const HomeBanner = () => (
-  <div className="bannerBox">
-    <img src={bannerImg}/>
+const Banner = ({image, style}) => (
+  <div style={style} className="bannerBox">
+    <img src={image}/>
     <style jsx={true}>{`
       .bannerBox {
         margin: 5rem 0;
@@ -14,4 +13,4 @@ const HomeBanner = () => (
   </div>
 )
 
-export default HomeBanner
+export default Banner

@@ -1,7 +1,6 @@
 import React from 'react'
 import homeTopImage from "../images/top-img.jpg";
-import HomeBanner from "../components/home/home-banner";
-import HomeNews from "../components/home/news";
+import Banner from "../components/home/banner";
 import Welgee from '../components/home/welgee';
 import HomePassion from "../components/home/passion";
 import Layout from "../components/layout"
@@ -9,6 +8,11 @@ import JoinUsSection from "../components/common/joini-us"
 import { graphql, useStaticQuery } from "gatsby"
 import NewsComponent from "../components/news"
 import SectionTitle from "../components/common/section-title"
+import ProgramSection from "../components/home/program"
+import PartnerSection from "../components/about/partener"
+
+import bannerImg from '../images/campaign.png'
+
 const Home = () => {
   const newsPage = useStaticQuery(graphql`
       query {
@@ -38,7 +42,7 @@ const Home = () => {
     <div className="container">
       <img src={homeTopImage} className="topImg"/>
       <div className="newsBox">
-        <HomeBanner/>
+        <Banner image={bannerImg}/>
         <div id="news">
           <SectionTitle jpTitle="お知らせ" enTitle="News"/>
           <div className="items">
@@ -50,6 +54,8 @@ const Home = () => {
         <Welgee />
       </div>
       <HomePassion />
+      <ProgramSection />
+      <PartnerSection />
       <JoinUsSection />
       <style jsx>{`
         container {

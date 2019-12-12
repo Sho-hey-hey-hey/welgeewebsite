@@ -90,6 +90,9 @@ const WelgeeSalonPage = () => {
   return (
     <Layout>
       <section id="top">
+        <br />
+        <br />
+        <br />
         <div className="contents-1">
           <AboutSectionTitle enTitle="WELgee salon" jpTitle="WELgeeサロン"/>
           <SectionDescription style={{marginTop: '3rem'}}>

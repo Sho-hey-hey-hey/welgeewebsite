@@ -1,7 +1,7 @@
 ---
 title: 'Post by only Report Category'
 date: '2018-03-28'
-featuredImage: /img/uploads/boss-image.jpeg
+featuredImage: /img/boss-image.jpeg
 excerpt: This is an excerpt of Post Two
 tags: ["Media"]
 

@@ -1,7 +1,7 @@
 ---
 title: '世界難民の日とは？世界難民の日が生まれた経緯と、今年国内で開催される、キャンペーンやイベントをまとめました。'
 date: '2018-03-28'
-featuredImage: /img/uploads/saloon-vol-31.jpg
+featuredImage: /img/saloon-vol-31.jpg
 excerpt: This is an excerpt of Post Two
 tags: ["Event", "Media"]
 

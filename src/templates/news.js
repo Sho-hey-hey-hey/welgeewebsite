@@ -8,6 +8,7 @@ export const query = graphql`
             frontmatter {
                 title
                 date
+                tags
                 featuredImage
             }
             html
@@ -17,6 +18,7 @@ export const query = graphql`
 
 const NewsPage = ({data}) => {
   const { frontmatter, html } = data.markdownRemark
+  const tag = frontmatter.tags[0]
   return (
     <Layout>
       <div className="arrow-back">
@@ -27,7 +29,7 @@ const NewsPage = ({data}) => {
       </div>
       <div id="news">
         <div className="date-label">
-          <div className="category">ニュース</div>
+          <div className={`category ${tag}`}>{tag}</div>
           <div className="date">{frontmatter.date}</div>
         </div>
         <p className="news-title">{frontmatter.title}</p>
@@ -49,7 +51,6 @@ const NewsPage = ({data}) => {
         #news .category {
           width: 70px;
           height: 25px;
-          background-color: #5CBBFF;
           color: white;
           border-radius: 4px;
           text-align: center;
@@ -71,6 +72,15 @@ const NewsPage = ({data}) => {
         }
         .news-content {
           margin: 0 10%;
+        }
+        div.Event {
+          background: #FF7875;
+        }
+        div.Media {
+          background: #2EB358;
+        }
+        div.News {
+          background: #5CBBFF;
         }
       `}</style>
     </Layout>

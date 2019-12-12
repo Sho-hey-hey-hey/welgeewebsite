@@ -11,7 +11,7 @@ const TextImageBackground = props => {
         <p>
           {description}
         </p>
-        <YellowButton title="more" link={buttonLink} />
+        {buttonLink && <YellowButton title="more" link={buttonLink} />}
       </div>
       <style jsx>{`
         #passion {
@@ -33,7 +33,7 @@ const TextImageBackground = props => {
         }
         p {
           margin: 2.5rem 0 3rem 0;
-          font-size: 1.25rem;
+          font-size: 1.1rem;
           line-height: 2.5rem;
           text-align: center;
           white-space: pre-wrap;
